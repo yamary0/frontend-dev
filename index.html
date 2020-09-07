@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self-Introduction</title>
+    <meta name="description" content="山口遼の自己紹介サイト　その１">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function () {
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function () {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href = $(this).attr('href');
+          var target = $(href == '#' || href == '' ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({ scrollTop: position }, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header-nav">
+      <div class="header-nav__inner">
+        <div class="header-nav__logo sp">yamary0</div>
+        <div class="header-nav__links">
+          <a class="header-nav__link" href="#history"></a>
+          <a class="header-nav__link" href="#skills"></a>
+          <a class="header-nav__link" href="#vision"></a>
+          <a class="header-nav__link" href="#connect"></a>
+        </div>
+        <div class="header-nav__menu sp"></div>
+      </div>
+    </div>
+    <div class="mainVisual">
+      <div class="mainVisual__inner">
+        <div class="mainVisual__title">
+          <div>私、山口遼は</div>
+          <div>2020年9月30日をもって<br class="pc">理系国立大学院を退学します。</div>
+          <div>そして、<br class="pc">Webディレクターになります。</div>
+        </div>
+        <div class="mainVisual__links">
+          <a class="mainVisual__link" href="#history">history</a>
+          <a class="mainVisual__link" href="#skills">skills</a>
+          <a class="mainVisual__link" href="#vision">vision</a>
+          <a class="mainVisual__link" href="#connect">connect</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="history" id="history">
+      <div class="history__inner">
+        <div class="history__title section-title">Personal History</div>
+        <div class="history__main">
+          <div class="history__item">
+            <img class="history__itemImg KZ" src="images/Kitazono_High_School.jpg" alt="" />
+            <div class="history__itemTitle">都立　北園高等学校</div>
+            <div class="history__itemContent">
+              <ul>
+                <li class="history__li">3年間文化祭副リーダー</li>
+                <li class="history__li">部活リーダー</li>
+                <li class="history__li">受験期は切磋琢磨の青春</li>
+              </ul>
+            </div>
+          </div>
+          <div class="history__item">
+            <img class="history__itemImg YNU" src="images/YNU.jpg" alt="" />
+            <div class="history__itemTitle">横浜国立大学　<span>理工学部</span></div>
+            <div class="history__itemContent">
+              <ul>
+                <li class="history__li">授業で数学を2年間</li>
+                <li class="history__li">独学でPG(C++)4年間</li>
+                <li class="history__li">色彩授業で歴代最高評価</li>
+              </ul>
+            </div>
+          </div>
+          <div class="history__item">
+            <img class="history__itemImg YNU2" src="images/YNU2.jpg" alt="" />
+            <div class="history__itemTitle">横浜国立大学大学院</div>
+            <div class="history__itemContent">
+              <ul>
+                <li class="history__li">人の質感知覚を研究</li>
+                <li class="history__li">画像処理・機械学習を使用</li>
+                <li class="history__li">2020/09 自主退学</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="skills__inner">
+        <div class="skills__title section-title">Skills</div>
+        <div class="caption">※自己評価/同年代学生比</div>
+        <div class="skills__main">
+          <div class="skills__item__inner">
+            <div class="skills__itemTitle">C/C++</div>
+            <div class="skills__pBar">
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Below Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Very Good</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Excellent</div>
+              </div>
+              <div class="skills__bar"></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text last">Outstanding</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item__inner">
+            <div class="skills__itemTitle">Python</div>
+            <div class="skills__pBar">
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Below Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Very Good</div>
+              </div>
+              <div class="skills__bar"></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text">Excellent</div>
+              </div>
+              <div class="skills__bar"></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text last">Outstanding</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item__inner">
+            <div class="skills__itemTitle">Web-Front</div>
+            <div class="skills__pBar">
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Below Average</div>
+              </div>
+              <div class="skills__bar  active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Average</div>
+              </div>
+              <div class="skills__bar "></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text">Very Good</div>
+              </div>
+              <div class="skills__bar "></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text">Excellent</div>
+              </div>
+              <div class="skills__bar "></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text last">Outstanding</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item__inner">
+            <div class="skills__itemTitle">Adobe Illustrator</div>
+            <div class="skills__pBar">
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Below Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Average</div>
+              </div>
+              <div class="skills__bar "></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text">Very Good</div>
+              </div>
+              <div class="skills__bar"></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text">Excellent</div>
+              </div>
+              <div class="skills__bar"></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text last">Outstanding</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item__inner">
+            <div class="skills__itemTitle">Office PowerPoint</div>
+            <div class="skills__pBar">
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Below Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Very Good</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Excellent</div>
+              </div>
+              <div class="skills__bar"></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text last">Outstanding</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item__inner">
+            <div class="skills__itemTitle">Office Excel</div>
+            <div class="skills__pBar">
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Below Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Average</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Very Good</div>
+              </div>
+              <div class="skills__bar active"></div>
+              <div class="skills__icon active">
+                <div class="skills__icon__text">Excellent</div>
+              </div>
+              <div class="skills__bar"></div>
+              <div class="skills__icon">
+                <div class="skills__icon__text last">Outstanding</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision" id="vision">
+      <div class="vision__inner">
+        <div class="vision__title section-title">Carrer Vision</div>
+        <div class="vision__content">
+          <span class="vision__text">DESIGN </span>
+          <div class="vision__caption">美しいものを思い描く</div>
+          <span class="vision__text">CODING </span>
+          <div class="vision__caption">思い描いたものを形にする</div>
+          <span class="vision__text">DIRECTION</span>
+          <div class="vision__caption">思い通りの印象へと導く</div>
+        </div>
+        <div class="vision__main">
+          <p>どんなに良いコンテンツでも、<br class="sp">適したデザイン出ないとその良さは発揮できない.</p>
+          <p>どんなに良いデザインでも、<br class="sp">形に出来ないと見てもらえない.</p>
+          <p>コンテンツを売る、知ってもらう、使ってもらう.</p>
+          <p>人々を思い通りに誘導するにはデザインとコーディングを当たり前に出来る必要があると考えています.</p>
+          <p>なので私は、<br class="sp">1つずつ理解するための勉強・活動をしています.</p>
+        </div>
+      </div>
+    </section>
+    <section class="connect" id="connect">
+      <div class="connect__inner">
+        <div class="connect__title section-title">Connect Me</div>
+        <div class="connect__main">
+          <i class="material-icons connect__icon">mail_outline</i>
+          <div class="connect_content">yamaryoscientific@gmail.com</div>
+          <i class="material-icons connect__icon">smartphone</i>
+          <div class="connect_content">09054998887</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
